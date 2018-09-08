@@ -33,6 +33,25 @@ make help
 
 #### gitコマンドたち
 
+##### github
+
+cloneしているレポジトリを曖昧検索して良い感じに移動できます.
+
+```sh
+github
+```
+
+ghq rootというものを設定する必要があります.
+
+~/.gitconfigに
+```
+[ghq]
+  root = ~/go/src/
+```
+
+検索したいレポジトリのrootディレクトリを設定しましょう.
+詳しくはググってください.
+
 ##### gch
 
 曖昧検索をしながらgit checkoutができます
@@ -41,8 +60,8 @@ make help
 gch
 ```
 
-ctrl-j :下
-ctrl-k :上
+ctrl-j :下.
+ctrl-k :上.
 enter: 決定
 
 ##### ga
@@ -54,14 +73,14 @@ diffを確認しながらgit addができるコマンドです.
 ga
 ```
 
-ctrl-j :下
-ctrl-k :上
+ctrl-j :下.
+ctrl-k :上.
 
-ctrl-i :選択
-enter: 決定
+ctrl-i :選択.
+enter: 決定.
 
-ctrl-d :preview windowを下にスクロール
-ctrl-u :preview windowを上にスクロール
+ctrl-d :preview windowを下にスクロール.
+ctrl-u :preview windowを上にスクロール.
 
 ##### gl
 
