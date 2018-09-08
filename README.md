@@ -85,7 +85,7 @@ git logを確認することができます.
 
 > gp
 
-> git push origin [今いるbranch]
+*git push origin [今いるbranch]*
 
 してくれるだけのコマンドと思いきや,
 masterにpushしようとすると本当にpushして良いか聞いてくれます
