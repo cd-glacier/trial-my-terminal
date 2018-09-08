@@ -133,7 +133,7 @@ grep的なやつです.
 neovimを開いたrootからfile検索ができます.
 findコマンド的なものです.
 
-> e .
+> :e .
 
 nerdtreeというpluginを使って
 ディレクトリの階層を確認できます.
