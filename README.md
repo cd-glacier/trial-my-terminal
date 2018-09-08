@@ -57,6 +57,8 @@ ghq rootというものを設定する必要があります.
 
 曖昧検索をしながらgit checkoutができます
 
+![gch](https://user-images.githubusercontent.com/12538942/45256223-6beb0780-b3ce-11e8-9cb6-cd95ae0522e5.gif)
+
 ```sh
 gch
 ```
@@ -69,6 +71,8 @@ enter: 決定
 
 レポジトリの*root*で叩くと
 diffを確認しながらgit addができるコマンドです.
+
+![ga](https://user-images.githubusercontent.com/12538942/45256274-588c6c00-b3cf-11e8-844e-35ca86969317.gif)
 
 ```sh
 ga
@@ -88,6 +92,8 @@ ctrl-u :preview windowを上にスクロール.
 git logを確認することができます.
 2つ選択して決定すると,
 選択したcommitの差分を確認することができます.
+
+![gl](https://user-images.githubusercontent.com/12538942/45256345-1ca5d680-b3d0-11e8-83be-2f76160903a2.gif)
 
 ```sh
 gl
