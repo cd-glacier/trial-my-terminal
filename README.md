@@ -33,14 +33,10 @@ make help
 
 #### gitコマンドたち
 
-##### github
+> github
 
 cloneしているレポジトリを曖昧検索して良い感じに移動できます.
 移動する際にREADME.mdを確認できます
-
-```sh
-github
-```
 
 ghq rootというものを設定する必要があります.
 
@@ -53,30 +49,22 @@ ghq rootというものを設定する必要があります.
 検索したいレポジトリのrootディレクトリを設定しましょう.
 詳しくはググってください.
 
-##### gch
+> gch
 
 曖昧検索をしながらgit checkoutができます
 
 ![gch](https://user-images.githubusercontent.com/12538942/45256223-6beb0780-b3ce-11e8-9cb6-cd95ae0522e5.gif)
 
-```sh
-gch
-```
-
 ctrl-j :下.
 ctrl-k :上.
 enter: 決定
 
-##### ga
+> ga
 
 レポジトリの*root*で叩くと
 diffを確認しながらgit addができるコマンドです.
 
 ![ga](https://user-images.githubusercontent.com/12538942/45256274-588c6c00-b3cf-11e8-844e-35ca86969317.gif)
-
-```sh
-ga
-```
 
 ctrl-j :下.
 ctrl-k :上.
@@ -87,7 +75,7 @@ enter: 決定.
 ctrl-d :preview windowを下にスクロール.
 ctrl-u :preview windowを上にスクロール.
 
-##### gl
+> gl
 
 git logを確認することができます.
 2つ選択して決定すると,
@@ -95,42 +83,26 @@ git logを確認することができます.
 
 ![gl](https://user-images.githubusercontent.com/12538942/45256345-1ca5d680-b3d0-11e8-83be-2f76160903a2.gif)
 
-```sh
-gl
-```
-
-##### gp
+> gp
 
 > git push origin [今いるbranch]
 
 してくれるだけのコマンドと思いきや,
 masterにpushしようとすると本当にpushして良いか聞いてくれます
 
-```
-gp
-```
-
-##### hi
+> hi
 
 historyをfzfによって曖昧検索できるだけです
 
-```sh
-hi
-```
 
-##### copy & paste
+> copy [file or dir]
 
 cpコマンドのようにコピー先を指定する必要のないcopyコマンドです.
 clipboardにコピーするようなイメージです.
 
-```sh
-copy [file or dir]
-```
+> paste
 
 カレントディレクトリにコピーしたファイル, ディレクトリをpasteします
-```sh
-paste
-```
 
 ## neovim
 
