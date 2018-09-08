@@ -36,6 +36,7 @@ make help
 ##### github
 
 cloneしているレポジトリを曖昧検索して良い感じに移動できます.
+移動する際にREADME.mdを確認できます
 
 ```sh
 github
