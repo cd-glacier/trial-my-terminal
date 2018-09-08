@@ -134,4 +134,52 @@ paste
 
 ## neovim
 
+自分の気に入った設定が最初から入っているneovimです
 
+最初に
+
+> :call dein#install()
+
+と打つことでdeinを使ったpluginのインストールが始まります.
+
+### わかりにくいコマンドの説明
+
+以下はnormalモードで入力してください.
+
+
+> ,a
+
+neovimを開いたrootから曖昧検索ができます.
+grep的なやつです.
+
+> ;
+
+最近開いたファイルをfzfを用いて検索できます.
+
+> '
+
+neovimを開いたrootからfile検索ができます.
+findコマンド的なものです.
+
+> e .
+
+nerdtreeというpluginを使って
+ディレクトリの階層を確認できます.
+
+> :T
+
+新しいtabをひらきます
+
+##### golangを書く時のコマンド
+
+vim-go, gocode, godefというpluginを使用しています.
+
+保存時にimportとformatを自動で行います.
+
+> gd
+
+と打つことでカーソル上の定義にjumpできます.
+
+> ctrl-t
+
+で戻ることができます.
