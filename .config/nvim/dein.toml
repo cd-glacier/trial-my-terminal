@@ -48,8 +48,8 @@ hook_add = '''
   let g:auto_ctags = 1
   let g:formatdef_scalafmt = "'scalafmt --stdin'"
   let g:formatters_scala = ['scalafmt']
-  " scala fmt	
-  autocmd BufWritePre *.scala Autoformat 
+  " scala fmt
+  autocmd BufWritePre *.scala Autoformat
 '''
 
 [[plugins]] # syntax highlight

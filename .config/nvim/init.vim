@@ -22,8 +22,8 @@ set ruler
 set nohlsearch
 " タイトル表示
 set title
-" 対応括弧をハイライト表示する 
-set showmatch 
+" 対応括弧をハイライト表示する
+set showmatch
 " 対応括弧の表示秒数を3秒にする
 set matchtime=3
 "ポップアップバーの色
@@ -51,7 +51,7 @@ autocmd BufNewFile,BufRead *.{html,htm,vue*} set filetype=html
 map ,st :%!java -jar /home/me/bin/scalariform.jar -f -q +compactControlReadability +alignParameters +alignSingleLineCaseStatements +doubleIndentClassDeclaration +preserveDanglingCloseParenthesis +rewriteArrowSymbols +preserveSpaceBeforeArguments --stdin --stdout <CR>
 " spell check
 set spelllang+=cjk
-set spell 
+set spell
 hi clear SpellBad
 hi SpellBad cterm=underline
 " set colorを制限して重くなるのを回避
@@ -73,7 +73,7 @@ set shiftwidth=2
 " 入力モード中に素早くJJと入力した場合はESCとみなす
 inoremap jj <Esc>
 " 文字がない場所にもカーソルを移動できるようにする
-"set virtualedit=all 
+"set virtualedit=all
 " backspace効かないので
 set backspace=indent,eol,start
 " マウス対応
@@ -140,7 +140,7 @@ endif
 " したと仮定
 let deinroot = "~/.config/dein/."
 let $DEIN_PATH= deinroot . "/repos/github.com/Shougo/dein.vim"
-let s:toml = "~/.config/nvim/deim.toml"
+let s:toml = "~/.config/nvim/dein.toml"
 
 " Required:
 set runtimepath+=$DEIN_PATH
