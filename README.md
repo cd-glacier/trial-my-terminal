@@ -1,3 +1,18 @@
+
+This repository is not maintenance.
+
+https://github.com/g-hyoga/dotfiles
+
+こっちをcloneして
+
+```sh
+make nvim
+```
+
+とかする方が良いです
+
+---
+
 # trial-my-terminal
 
 fish, neovim with deinを人に勧めるために作られたレポジトリです.
