@@ -1,16 +1,4 @@
 
-This repository is not maintenance.
-
-https://github.com/g-hyoga/dotfiles
-
-こっちをcloneして
-
-```sh
-make nvim
-```
-
-とかする方が良いです
-
 ---
 
 # trial-my-terminal
@@ -19,16 +7,16 @@ fish, neovim with deinを人に勧めるために作られたレポジトリで�
 
 installすると良い感じに設定されたfishとneovimが使用できます.
 
-## install
+## install and setup neovim
 
 ```sh
-make install
+make nvim
 ```
 
-## uninstall
+## install and setup fish
 
-```sh
-make uninstall
+```
+make fish
 ```
 
 ### make help
@@ -36,6 +24,63 @@ make uninstall
 ```sh
 make help
 ```
+
+-----
+
+## neovim
+
+自分の気に入った設定が最初から入っているneovimです
+
+最初に
+
+> :call dein#install()
+
+と打つことでdeinを使ったpluginのインストールが始まります.
+
+### わかりにくいコマンドの説明
+
+以下はnormalモードで入力してください.
+
+
+> 'a
+
+neovimを開いたrootから曖昧検索ができます.
+grep的なやつです.
+
+> "
+
+最近開いたファイルをfzfを用いて検索できます.
+
+> '
+
+neovimを開いたrootからfile検索ができます.
+findコマンド的なものです.
+
+> :e .
+
+nerdtreeというpluginを使って
+ディレクトリの階層を確認できます.
+
+> :T
+
+新しいtabをひらきます
+
+> gd
+
+定義jump
+
+ * go
+ * ruby
+ * bash
+ * js
+
+で使用可能です
+
+> ctrl-t
+
+で戻ることができます.
+
+----
 
 ## fish
 
@@ -64,7 +109,7 @@ ghq rootというものを設定する必要があります.
 検索したいレポジトリのrootディレクトリを設定しましょう.
 詳しくはググってください.
 
-> gch
+> cout
 
 曖昧検索をしながらgit checkoutができます
 
@@ -74,7 +119,7 @@ ctrl-j :下.
 ctrl-k :上.
 enter: 決定
 
-> ga
+> add
 
 レポジトリの*root*で叩くと
 diffを確認しながらgit addができるコマンドです.
@@ -90,7 +135,7 @@ enter: 決定.
 ctrl-d :preview windowを下にスクロール.
 ctrl-u :preview windowを上にスクロール.
 
-> gl
+> commits
 
 git logを確認することができます.
 2つ選択して決定すると,
@@ -98,7 +143,7 @@ git logを確認することができます.
 
 ![gl](https://user-images.githubusercontent.com/12538942/45256345-1ca5d680-b3d0-11e8-83be-2f76160903a2.gif)
 
-> gp
+> push
 
 *git push origin [今いるbranch]*
 
@@ -119,54 +164,3 @@ clipboardにコピーするようなイメージです.
 
 カレントディレクトリにコピーしたファイル, ディレクトリをpasteします
 
-## neovim
-
-自分の気に入った設定が最初から入っているneovimです
-
-最初に
-
-> :call dein#install()
-
-と打つことでdeinを使ったpluginのインストールが始まります.
-
-### わかりにくいコマンドの説明
-
-以下はnormalモードで入力してください.
-
-
-> ,a
-
-neovimを開いたrootから曖昧検索ができます.
-grep的なやつです.
-
-> ;
-
-最近開いたファイルをfzfを用いて検索できます.
-
-> '
-
-neovimを開いたrootからfile検索ができます.
-findコマンド的なものです.
-
-> :e .
-
-nerdtreeというpluginを使って
-ディレクトリの階層を確認できます.
-
-> :T
-
-新しいtabをひらきます
-
-##### golangを書く時のコマンド
-
-vim-go, gocode, godefというpluginを使用しています.
-
-保存時にimportとformatを自動で行います.
-
-> gd
-
-と打つことでカーソル上の定義にjumpできます.
-
-> ctrl-t
-
-で戻ることができます.
